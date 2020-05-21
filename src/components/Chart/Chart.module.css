@@ -2,4 +2,11 @@
   display: flex;
   justify-content: center;
   width: 85%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
