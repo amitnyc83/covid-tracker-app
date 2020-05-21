@@ -9,7 +9,7 @@ export const fetchData = async () => {
 
     return { confirmed, recovered, deaths, lastUpdate };
   } catch (error) {
-
+    console.log(error);
   }
 }
 
@@ -24,6 +24,16 @@ export const fetchDailyData = async () => {
     }));
     return modifiedData;
   } catch (error){
-    
+    console.log(error);
+  }
+}
+
+export const countries = async () => {
+  try{
+    const response = await axios.get(`${url}/countries`);
+
+    console.log(response);
+  } catch (error) {
+    console.log(error);
   }
 }
